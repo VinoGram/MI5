@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background: linear-gradient(to right, #ff3366, #4ecdc4) left, linear-gradient(to right, #2b5876, #6a0572) right;
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+        }
+        
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .grid-item h2 {
+            font-size: 16px;
+            margin: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="image1.jpg" alt="Image 1">
+            <h2>Title 1</h2>
+        </div>
+        <div class="grid-item">
+            <img src="image2.jpg" alt="Image 2">
+            <h2>Title 2</h2>
+        </div>
+    </div>
+
+</body>
+</html>
